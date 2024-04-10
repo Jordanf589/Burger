@@ -17,7 +17,6 @@ class UserAdapter :ListAdapter<Customer,UserAdapter.UserAdapter>(UserViewHolder(
 {
     class UserAdapter(view : View): RecyclerView.ViewHolder(view)
     {
-
     }
     override fun onCreateViewHolder(parent : ViewGroup, viewType:Int):UserAdapter
     {
