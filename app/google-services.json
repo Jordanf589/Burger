@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "664615969191",
+    "firebase_url": "https://burgerworld-52e03-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "burgerworld-52e03",
+    "storage_bucket": "burgerworld-52e03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664615969191:android:dfe870cbc9b01716391682",
+        "android_client_info": {
+          "package_name": "com.example.firebasebasics"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAga7ieEAmKx_-6VW5JQoz_1tfidgHvRYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664615969191:android:91b0532262c126af391682",
+        "android_client_info": {
+          "package_name": "com.example.firebaserestaurantapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAga7ieEAmKx_-6VW5JQoz_1tfidgHvRYk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
