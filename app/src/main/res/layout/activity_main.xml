@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="90dp"
-        android:layout_marginBottom="69dp"
+        android:layout_marginBottom="70dp"
         android:text="Name: "
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toStartOf="@+id/txtCustomerName"
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="48dp"
-        android:layout_marginBottom="43dp"
+        android:layout_marginBottom="44dp"
         android:text="Favourite Item:"
         app:layout_constraintBottom_toTopOf="@+id/btnAdd"
         app:layout_constraintEnd_toStartOf="@+id/txtFaveItem"
@@ -62,9 +62,9 @@
         android:id="@+id/txtFaveItem"
         android:layout_width="0dp"
         android:layout_height="53dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="35dp"
         android:layout_marginEnd="30dp"
-        android:layout_marginBottom="26dp"
+        android:layout_marginBottom="27dp"
         android:ems="10"
         android:inputType="text"
         android:text="Name"
@@ -75,23 +75,35 @@
 
     <Button
         android:id="@+id/btnAdd"
-        android:layout_width="213dp"
-        android:layout_height="75dp"
-        android:layout_marginBottom="3dp"
+        android:layout_width="223dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="1dp"
         android:text="Add to database"
-        app:layout_constraintBottom_toTopOf="@+id/rvList"
+        app:layout_constraintBottom_toTopOf="@+id/lvCustomers"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvList"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
+    <ListView
+        android:id="@+id/lvCustomers"
+        android:layout_width="409dp"
+        android:layout_height="125dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRemove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="110dp"
+        android:text="Remove"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
