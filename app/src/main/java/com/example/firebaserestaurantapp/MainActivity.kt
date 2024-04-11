@@ -67,6 +67,18 @@ class MainActivity : AppCompatActivity() {
                     val dc2 = snapshot1.getValue(Customer:: class.java)
                     val txt = "${dc2?.Name} - ${dc2?.Item}"
                     txt?.let { list.add(it) }
+                    listView.onItemClickListener = object : AdapterView.OnItemClickListener{
+                        override fun onItemClick(
+                            parent: AdapterView<*>?,
+                            view: View?,
+                            position: Int,
+                            id: Long
+                        ) {
+                            val remove = userReference.child(list[position].toString().substringBefore(" -"))
+                            remove.removeValue()
+                        }
+
+                    }
                 }
                 adapter.notifyDataSetChanged()
             }
@@ -76,6 +88,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
+
 
 
     }
