@@ -1,6 +1,7 @@
 package com.example.firebaserestaurantapp
 
 data class Customer(
-    val Name : String,
-    val Item : String
+    var Name : String = "",
+    var Item : String = "",
+    var id : Int = 0
 )
